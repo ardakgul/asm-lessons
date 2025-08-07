@@ -108,10 +108,10 @@ Bellek adresi hesaplamaları için sözdizimine bakalım. Bu, tüm bellek adresi
 [base + scale*index + disp]
 ```
 
-* base - This is a GPR (usually a pointer from a C function argument)
-* scale - This can be 1, 2, 4, 8. 1 is the default
-* index - This is a GPR (usually a loop counter)
-* disp - This is an integer (up to 32-bit). Displacement is an offset into the data
+* base - Bu bir GPR'dır (genellikle bir C fonksiyon argümanından gelen bir işaretçi)
+* scale - Bu 1, 2, 4, 8 olabilir. Varsayılan olarak 1'dir.
+* index - Bu bir GPR'dır. (genellikle bir döngü sayacı)
+* disp - Bu bir tam sayıdır (32 bit'e kadar). Yer değiştirme (displacement), verilerdeki bir kaydırmadır.
 
 x86asm, çalıştığınız SIMD kaydının boyutunu öğrenmenizi sağlayan mmsize sabitini sağlar.
 
